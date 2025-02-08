@@ -1,8 +1,8 @@
 .form-modal {
   width: 100%;
   height: 100%;
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -56,6 +56,6 @@
   display: none;
 }
 /* ------------- */
-.disply-form {
+.display-form {
   display: flex;
 }
