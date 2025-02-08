@@ -2,8 +2,8 @@ class Ui {
   static toggleBookTypeFields(
     printedBookContainer,
     audioBookContainer,
-    audioFields,
     printedFields,
+    audioFields,
     bookType
   ) {
     // Hide both containers initially

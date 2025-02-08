@@ -1,3 +1,4 @@
+import BookManager from "./bookManager.js";
 import Ui from "./ui.js";
 
 // Select dom elements
@@ -51,8 +52,24 @@ bookTypeDropdown.addEventListener("change", () => {
   Ui.toggleBookTypeFields(
     printedBookContainer,
     audioBookContainer,
-    audioFields,
     printedFields,
+    audioFields,
     bookTypeDropdown.value
+  );
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  BookManager.addBook(
+    title.value.trim(),
+    author.value.trim(),
+    publisher.value.trim(),
+    date.value,
+    bookTypeDropdown.value,
+    pages.value.trim(),
+    printType.value,
+    narrator.value.trim(),
+    duration.value
   );
 });
