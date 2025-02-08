@@ -1,3 +1,5 @@
+import AudioBook from "./audioBook.js";
+import PrintedBook from "./printedBooks.js";
 class BookManager {
   static addBook(
     title,

@@ -10,7 +10,7 @@ const audioBookContainer = document.querySelector(".form__audio-book");
 
 // Selecting for inputs
 const form = document.querySelector(".form");
-const title = document.querySelector(".form__title");
+const title = document.querySelector(".form__title-input");
 const author = document.querySelector(".form__author-input");
 const publisher = document.querySelector(".form__publisher-input");
 const date = document.querySelector(".form__publication-input");
@@ -52,8 +52,8 @@ bookTypeDropdown.addEventListener("change", () => {
   Ui.toggleBookTypeFields(
     printedBookContainer,
     audioBookContainer,
-    printedFields,
     audioFields,
+    printedFields,
     bookTypeDropdown.value
   );
 });
